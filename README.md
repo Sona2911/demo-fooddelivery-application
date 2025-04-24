@@ -1,73 +1,109 @@
-# Welcome to your Lovable project
 
-## Project info
+# BiteBuddy - Food Delivery App
 
-**URL**: https://lovable.dev/projects/9db95ab1-8b46-4f56-afb5-ac328cd342a8
+A modern food delivery application with user authentication built using React.js and Node.js.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- User Registration and Login
+- Home Page with Food Categories
+- Responsive design for all devices
+- Authentication with Email/Password and Phone OTP
+- Google Sign-in Option
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9db95ab1-8b46-4f56-afb5-ac328cd342a8) and start prompting.
+### Frontend
+- React.js
+- React Router DOM
+- Tailwind CSS
+- TypeScript
+- Lucide Icons
 
-Changes made via Lovable will be committed automatically to this repo.
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- bcrypt.js
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
+- Node.js & npm
+- MongoDB
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1. **Clone the repository**
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+git clone <repository-url>
+cd bitebuddy
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. **Install frontend dependencies**
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. **Install backend dependencies**
+
+```bash
+cd server
+npm install
+```
+
+4. **Create .env file in server directory**
+
+Create a `.env` file in the server directory with the following content:
+
+```
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/bitebuddy
+JWT_SECRET=your-secret-key-change-this-in-production
+```
+
+### Running the Application
+
+1. **Start MongoDB**
+
+Make sure MongoDB is running on your system.
+
+2. **Start the backend server**
+
+In the server directory:
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+This will start the backend server at http://localhost:5000
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. **Start the frontend development server**
 
-**Use GitHub Codespaces**
+In the project root directory:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run dev
+```
 
-## What technologies are used for this project?
+This will start the frontend development server at http://localhost:8080
 
-This project is built with:
+## API Endpoints
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **POST /api/auth/register**: Register a new user
+- **POST /api/auth/login-email**: Login with email and password
+- **POST /api/auth/login-phone**: Send OTP to phone for authentication
+- **POST /api/auth/verify-otp**: Verify OTP for phone authentication
+- **GET /api/user/profile**: Get user profile (Protected)
 
-## How can I deploy this project?
+## Future Enhancements
 
-Simply open [Lovable](https://lovable.dev/projects/9db95ab1-8b46-4f56-afb5-ac328cd342a8) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Restaurant listings and menu items
+- Cart functionality
+- Order placement and tracking
+- Payment integration
+- User reviews and ratings
