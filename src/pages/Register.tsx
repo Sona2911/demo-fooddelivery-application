@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import NavBar from '../components/NavBar';
@@ -76,7 +75,6 @@ const Register = () => {
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
                   className="w-full border border-gray-300 rounded-md px-4 py-2 pl-10 focus:outline-none focus:ring-2 focus:ring-bitebuddy-orange"
-                  placeholder="John Doe"
                   required
                 />
               </div>
@@ -93,7 +91,6 @@ const Register = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full border border-gray-300 rounded-md px-4 py-2 pl-10 focus:outline-none focus:ring-2 focus:ring-bitebuddy-orange"
-                  placeholder="your.email@example.com"
                   required
                 />
               </div>
@@ -110,7 +107,6 @@ const Register = () => {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   className="w-full border border-gray-300 rounded-md px-4 py-2 pl-10 focus:outline-none focus:ring-2 focus:ring-bitebuddy-orange"
-                  placeholder="1234567890"
                   required
                 />
               </div>
@@ -127,7 +123,6 @@ const Register = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="w-full border border-gray-300 rounded-md px-4 py-2 pl-10 focus:outline-none focus:ring-2 focus:ring-bitebuddy-orange"
-                  placeholder="••••••"
                   required
                 />
               </div>
@@ -144,7 +139,6 @@ const Register = () => {
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   className="w-full border border-gray-300 rounded-md px-4 py-2 pl-10 focus:outline-none focus:ring-2 focus:ring-bitebuddy-orange"
-                  placeholder="••••••"
                   required
                 />
               </div>
