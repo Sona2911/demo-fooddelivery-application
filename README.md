@@ -92,15 +92,6 @@ npm run dev
 
 This will start the frontend development server at http://localhost:8080
 
-## API Endpoints
-
-- **POST /api/auth/register**: Register a new user
-- **POST /api/auth/login-email**: Login with email and password
-- **POST /api/auth/login-phone**: Send OTP to phone for authentication
-- **POST /api/auth/verify-otp**: Verify OTP for phone authentication
-- **GET /api/user/profile**: Get user profile (Protected)
-
-## Future Enhancements
 
 - Restaurant listings and menu items
 - Cart functionality
